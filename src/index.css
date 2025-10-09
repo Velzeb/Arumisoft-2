@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Paleta de colores personalizada */
+.bg-crema { background-color: #FFF2D2; }
+.bg-naranja-claro { background-color: #FAC873; }
+.bg-naranja { background-color: #F5A42D; }
+.bg-naranja-oscuro { background-color: #F17F26; }
+.bg-verde { background-color: #80AA3C; }
+.bg-verde-claro { background-color: #C9E69B; }
+.bg-verde-muy-claro { background-color: #EFFFD6; }
+
+.text-crema { color: #FFF2D2; }
+.text-naranja-claro { color: #FAC873; }
+.text-naranja { color: #F5A42D; }
+.text-naranja-oscuro { color: #F17F26; }
+.text-verde { color: #80AA3C; }
+.text-verde-claro { color: #C9E69B; }
+.text-verde-muy-claro { color: #EFFFD6; }
+
+.border-crema { border-color: #FFF2D2; }
+.border-naranja-claro { border-color: #FAC873; }
+.border-naranja { border-color: #F5A42D; }
+.border-naranja-oscuro { border-color: #F17F26; }
+.border-verde { border-color: #80AA3C; }
+.border-verde-claro { border-color: #C9E69B; }
+.border-verde-muy-claro { border-color: #EFFFD6; }

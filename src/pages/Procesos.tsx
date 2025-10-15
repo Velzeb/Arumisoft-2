@@ -68,13 +68,22 @@ const Procesos: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-crema">
-      {/* Header */}
-      <section className="py-16 px-4 bg-naranja-oscuro text-white">
+      {/* Header with image background */}
+      <section
+        className="py-16 px-4 text-white"
+        style={{
+          backgroundImage: `url('/src/assets/procesos.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">Nuestro Proceso de Trabajo</h1>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Metodología probada que garantiza resultados excepcionales en cada proyecto
-          </p>
+          <div className="bg-black/50 inline-block p-6 rounded">
+            <h1 className="text-4xl font-bold mb-4">Nuestro Proceso de Trabajo</h1>
+            <p className="text-xl opacity-90 max-w-2xl mx-auto">
+              Metodología probada que garantiza resultados excepcionales en cada proyecto
+            </p>
+          </div>
         </div>
       </section>
 

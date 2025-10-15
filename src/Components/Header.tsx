@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           activeHref={location.pathname}
           ease="power2.easeOut"
           baseColor="#FFFFFF" // texto base dentro del header
-          pillColor="#FFF2D2" // crema (fondo de las pills)
+          pillColor="#FFFFFF" // crema (fondo de las pills)
           hoveredPillTextColor="#F17F26" // naranja-oscuro (texto al hacer hover)
           pillTextColor="#F17F26" // naranja-oscuro (texto de las pills)
         />

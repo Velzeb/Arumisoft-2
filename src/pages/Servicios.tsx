@@ -47,13 +47,22 @@ const Servicios: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-crema">
-      {/* Header */}
-      <section className="py-16 px-4 bg-naranja-oscuro text-white">
+      {/* Header with image background */}
+      <section
+        className="py-16 px-4 text-white"
+        style={{
+          backgroundImage: `url('/src/assets/servicios.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">Nuestros Servicios</h1>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Ofrecemos soluciones tecnológicas completas adaptadas a las necesidades de tu negocio
-          </p>
+          <div className="bg-black/50 inline-block p-6 rounded">
+            <h1 className="text-4xl font-bold mb-4">Nuestros Servicios</h1>
+            <p className="text-xl opacity-90 max-w-2xl mx-auto">
+              Ofrecemos soluciones tecnológicas completas adaptadas a las necesidades de tu negocio
+            </p>
+          </div>
         </div>
       </section>
 

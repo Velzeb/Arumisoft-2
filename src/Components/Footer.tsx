@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const renderIcon = (iconType: string) => {
-    const iconProps = { size: 20, className: "text-naranja" };
+    const iconProps = { size: 20, className: "text-white" };
 
     switch (iconType) {
       case 'mail':

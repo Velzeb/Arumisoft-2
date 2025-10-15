@@ -14,21 +14,23 @@ const Header: React.FC = () => {
   ];
 
   // Logo personalizado
-  const logo = '/src/assets/logon.jpg';
+  const logo = '/src/assets/f.png';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-crema shadow-md">
-      <PillNav
-        logo={logo}
-        logoAlt="ArumiSoft Logo"
-        items={navItems}
-        activeHref={location.pathname}
-        ease="power2.easeOut"
-        baseColor="#F17F26" // naranja-oscuro (texto base)
-        pillColor="#FFF2D2" // crema (fondo de las pills)
-        hoveredPillTextColor="#ffffff" // naranja-oscuro (texto al hacer hover)
-        pillTextColor="#F17F26" // naranja-oscuro (texto de las pills)
-      />
+    <header className="fixed top-0 left-0 right-0 z-50 shadow-md bg-[#F17F26]">
+      <div className="w-full flex justify-center py-3">
+        <PillNav
+          logo={logo}
+          logoAlt="ArumiSoft Logo"
+          items={navItems}
+          activeHref={location.pathname}
+          ease="power2.easeOut"
+          baseColor="#FFFFFF" // texto base dentro del header
+          pillColor="#FFF2D2" // crema (fondo de las pills)
+          hoveredPillTextColor="#F17F26" // naranja-oscuro (texto al hacer hover)
+          pillTextColor="#F17F26" // naranja-oscuro (texto de las pills)
+        />
+      </div>
     </header>
   );
 };

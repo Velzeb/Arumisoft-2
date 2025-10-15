@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
 
       {/* Espacio para el header fijo */}
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         {children}
       </main>
 

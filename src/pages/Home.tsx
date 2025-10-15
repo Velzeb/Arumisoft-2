@@ -1,13 +1,17 @@
 import React from 'react';
 import { Rocket, Target, Handshake } from 'lucide-react';
+import Iridescence from '../Backgrounds/Iridescence/Iridescence';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-crema">
+    <div className="min-h-screen relative">
+      <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+        <Iridescence color={[1, 0.5, 0.2]} mouseReact={false} amplitude={0.1} speed={1.0} />
+      </div>
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold text-naranja-oscuro mb-6">
+          <h1 className="text-5xl font-bold text-amber-50">
             Bienvenidos a ArumiSoft
           </h1>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
@@ -25,8 +29,8 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 px-4 bg-crema">
+  {/* Features Section */}
+  <section className="py-16 px-4 bg-crema">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-naranja-oscuro text-center mb-12">
             ¿Por qué elegirnos?

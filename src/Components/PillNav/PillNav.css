@@ -3,9 +3,12 @@
 */
 
 .pill-nav-container {
-  position: absolute;
-  top: 1em;
+  position: relative;
+  top: 0;
   z-index: 99;
+  display: flex;
+  justify-content: center; /* center the pill nav horizontally */
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -24,6 +27,7 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  background: transparent; /* let header control background */
 }
 
 @media (max-width: 768px) {
@@ -40,15 +44,16 @@
   display: flex;
   align-items: center;
   height: var(--nav-h);
-  background: var(--base, #000);
+  background: var(--pill-bg, #FFF2D2);
   border-radius: 9999px;
+  padding: 4px; /* a bit of spacing around pills */
 }
 
 .pill-logo {
   width: var(--nav-h);
   height: var(--nav-h);
   border-radius: 50%;
-  background: var(--base, #000);
+  background: transparent;
   padding: 8px;
   display: inline-flex;
   align-items: center;
@@ -172,7 +177,7 @@
   width: var(--nav-h);
   height: var(--nav-h);
   border-radius: 50%;
-  background: var(--base, #000);
+  background: transparent;
   border: none;
   display: none;
   flex-direction: column;
